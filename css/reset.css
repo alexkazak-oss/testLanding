@@ -1,0 +1,117 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	background: transparent;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-size: inherit;
+	font-weight: inherit;
+	z-index: 50 !important;
+}
+
+img {
+	vertical-align: top;
+}
+
+img,
+svg {
+	height: auto;
+	max-width: 100%;
+}
+
+address {
+	font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+	font-family: 'InterSemiB', sans-serif;
+	display: inline-block;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button,
+input[type='submit'] {
+	display: inline-block;
+	box-shadow: none;
+	background-color: transparent;
+	background: none;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+	outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+	z-index: 50;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+	user-select: none;
+	overflow-x: hidden !important;
+}
+main {
+	display: flex;
+	min-height: 100%;
+	width: 100%;
+}
+section {
+	width: 100%;
+}
