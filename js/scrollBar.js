@@ -17,10 +17,10 @@
 	window.addEventListener('load', resizeMargin)
 	window.addEventListener('resize', resizeMargin)
 
-	const itemsDub = 3
+	const itemsDub = 13
 	const scrollItem = document.querySelectorAll('.itemClone')
 
-	scrollItem.forEach((item, index) => {
+	scrollItem.forEach((item) => {
 		for (let i = 0; i < itemsDub; i++) {
 			const cloneItem = item.cloneNode(true)
 			scrollContent.appendChild(cloneItem)
