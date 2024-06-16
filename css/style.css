@@ -140,7 +140,7 @@
 	height: 50px;
 	display: inline-block;
 	border-radius: 28px;
-	border: var(--orange) 4px solid;
+	border: var(--orange) 2px solid;
 	span {
 		height: 100%;
 		display: flex !important;
@@ -155,7 +155,7 @@
 	width: 100%;
 	height: 50px;
 	border-radius: 28px;
-	border: var(--orange) 4px solid;
+	border: var(--orange) 2px solid;
 }
 
 .header {
@@ -284,7 +284,7 @@
 	align-items: center;
 }
 
-.visuallyHidden {
+.visually__hd {
 	position: absolute;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
@@ -299,9 +299,9 @@
 	margin: 0 auto;
 	width: 21px;
 	height: 14px;
-	display: flex;
 	position: relative;
-	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .hamburger .bar {
@@ -359,9 +359,11 @@
 	align-items: center;
 }
 
+/* MAIN */
+
 .main {
 	position: relative;
-	overflow-y: hidden;
+	overflow: hidden !important;
 }
 
 .main__container {
@@ -389,6 +391,13 @@
 	max-width: 669px;
 	position: relative;
 	z-index: 10;
+	position: relative;
+	::after {
+		content: '';
+		position: absolute;
+		height: 300%;
+		width: 100%;
+	}
 }
 
 .intro__desc {
@@ -674,10 +683,10 @@
 
 	.intro__radial-r {
 		position: absolute;
-		width: 100%;
-		height: 100%;
-		right: -35%;
-		bottom: -37%;
+		width: 200%;
+		height: 200%;
+		right: -95%;
+		bottom: -80%;
 		border-radius: 100%;
 	}
 
@@ -699,14 +708,9 @@
 		display: none;
 	}
 
-	.actions__button {
-		width: 36px;
-		padding: 8.36px;
-		align-items: center;
-	}
-
 	.header__actions {
 		height: 36px;
+		gap: 4px;
 	}
 
 	.selected-items {
@@ -731,6 +735,17 @@
 
 	.burger__menu {
 		display: block;
+	}
+
+	.actions__button {
+		width: 36px;
+		padding: 8.36px;
+		align-items: center;
+	}
+
+	.login {
+		border: var(--yellow) 2px solid !important;
+		background-color: var(--red);
 	}
 
 	.main {
