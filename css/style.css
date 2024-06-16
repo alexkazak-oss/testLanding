@@ -392,12 +392,6 @@
 	position: relative;
 	z-index: 10;
 	position: relative;
-	::after {
-		content: '';
-		position: absolute;
-		height: 300%;
-		width: 100%;
-	}
 }
 
 .intro__desc {
