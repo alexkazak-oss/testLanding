@@ -243,7 +243,7 @@
 .visible {
 	display: flex;
 	flex-direction: column;
-	height: 80px;
+	height: 130px;
 	z-index: 999;
 	position: relative;
 }
